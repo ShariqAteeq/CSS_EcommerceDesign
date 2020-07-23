@@ -1,0 +1,10 @@
+.product {
+    &__pop {
+        background-color: blueviolet;
+        grid-column: center-start / center-end;
+    }
+    &__trend {
+        background-color: chartreuse;
+        grid-column: center-start / center-end;
+    }
+}

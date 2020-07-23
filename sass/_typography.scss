@@ -1,0 +1,36 @@
+%heading {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 5rem;
+    color: black;
+    font-weight: 600;
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 1.6rem;
+    color: $color-brown;
+    font-weight: 600;
+    letter-spacing: .3rem;
+}
+
+.btn {
+    padding: 1.5rem 4rem;
+    color: #fff;
+    background-color: $color-primary;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.mt-small {margin-top: 2rem;}
+.mt-medium {margin-top: 6rem;}
+.mt-large {margin-top: 8rem;}

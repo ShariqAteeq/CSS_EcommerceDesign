@@ -1,0 +1,73 @@
+.header {
+    background-color: #fff;
+    grid-column: full-start / full-end;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12rem;
+
+
+    &__logo {
+    
+    }   
+    
+    &__nav {
+        
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-size: 1.45rem;
+        padding: 1.2rem;
+        font-weight: 530;
+    }
+
+    &__link:hover {
+        color: $color-primary;
+    }
+
+    &__notif {
+        display: flex;
+    }
+
+    &__iconbox {
+        padding: 1.2rem;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+
+        
+        &__not {
+            position: absolute;
+            width: 1.6rem;
+            height: 1.6rem;
+            font-size: 1rem;
+            top: 0;
+            right: 0;
+            background-color: $color-primary;
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+            align-self: center;
+            
+        }
+
+        &:hover {
+            fill: $color-primary;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+// colors
+
+$color-pink-light : #fef7f6;
+$color-pink-dark : #fab8c2;
+$color-ban-light : #EAE2D8;
+$color-brown : #756260;
+$color-primary : #FF5353;
+
+
+.about {
+    background-color: $color-pink-light;
+    grid-column: full-start / full-end;
+    font-size: 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12rem;
+
+    &__info {
+        display: flex;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        padding: 0 1rem;
+    }
+
+    &__feature {
+        display: flex;
+    }
+}

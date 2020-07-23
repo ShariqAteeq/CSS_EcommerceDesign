@@ -1,0 +1,40 @@
+
+.banner {
+    &-1 {
+        background-image: url('../img/bg-1.jpg');
+        background-position: center;
+        background-size: cover;
+        grid-column: full-start / full-end;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        &__text {
+            flex: 0 0 50%;
+            text-align: center;
+            padding: 4rem;
+        }
+
+        &__pic {
+            flex: 0 0 50%;
+            height: 100%;
+        }
+    }
+    &-2 {
+        background-color: #EAE2D8;
+        grid-column: full-start / full-end;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        &__text {
+            flex: 0 0 50%;
+            text-align: center;
+            padding: 4rem;
+            justify-self: flex-end;
+        }
+
+        &__pic {
+            flex: 0 0 40%;
+            height: 100%;
+        }
+    }
+}
