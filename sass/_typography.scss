@@ -1,20 +1,27 @@
 %heading {
     text-transform: uppercase;
-    font-weight: 400;
-    font-family: inherit;
+    font-family: 'Roboto', sans-serif;
 }
 
 .heading-1 {
     @extend %heading;
     font-size: 6rem;
     color: black;
-    font-weight: 550;
     text-transform: capitalize;
     line-height: 1.2;
+    font-weight: 500;
     &_italic {
         font-style: italic;
         font-weight: 500;
     }
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: #000000;
 }
 
 .heading-3 {
@@ -22,7 +29,7 @@
     font-size: 1.6rem;
     color: $color-brown;
     font-weight: 600;
-    letter-spacing: .3rem;
+    letter-spacing: .25rem;
 }
 .heading-4 {
     @extend %heading;
@@ -45,3 +52,4 @@
 .mt-small {margin-top: 2rem;}
 .mt-medium {margin-top: 6rem;}
 .mt-large {margin-top: 8rem;}
+.center-text {text-align: center;}
