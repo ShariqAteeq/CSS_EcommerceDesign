@@ -4,28 +4,36 @@
         background-image: url('../img/bg-1.jpg');
         background-position: center;
         background-size: cover;
-        grid-column: full-start / full-end;
+        height: 80vh;
+
         display:flex;
         align-items: center;
         justify-content: center;
+        
+
+
         &__text {
             flex: 0 0 50%;
             text-align: center;
-            padding: 5rem 8rem;
+            padding: 5rem 10rem;
             
         }
 
         &__pic {
-            flex: 0 0 50%;
+            flex: 40%;
             height: 100%;
         }
     }
     &-2 {
         background-color: #EAE2D8;
-        grid-column: full-start / full-end;
+         height: 65vh;
+
         display:flex;
         align-items: center;
         justify-content: center;
+
+        padding: 0 4rem;
+
         &__text {
             flex: 0 0 50%;
             text-align: center;
@@ -33,7 +41,7 @@
         }
 
         &__pic {
-            flex: 0 0 40%;
+            flex: 0 0 30%;
             height: 100%;
         }
     }

@@ -1,12 +1,11 @@
 .header {
     background-color: #fff;
-    grid-column: full-start / full-end;
     z-index: 100;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 12rem;
+    padding: 2.5rem 12rem;
 
 
     &__logo {

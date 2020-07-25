@@ -1,15 +1,14 @@
 %heading {
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
 }
 
 .heading-1 {
     @extend %heading;
-    font-size: 6rem;
+    font-size: 5.5rem;
     color: black;
     text-transform: capitalize;
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: 600;
     &_italic {
         font-style: italic;
         font-weight: 500;
@@ -30,11 +29,19 @@
     color: $color-brown;
     font-weight: 600;
     letter-spacing: .25rem;
+
+    &-black {
+        color: #000000;
+    }
 }
 .heading-4 {
     @extend %heading;
     font-size: 2.4rem;
+}
 
+.heading-5 {
+    @extend %heading;
+    font-size: 1.6rem;
 }
 
 .btn {
@@ -51,5 +58,6 @@
 
 .mt-small {margin-top: 2rem;}
 .mt-medium {margin-top: 6rem;}
-.mt-large {margin-top: 8rem;}
+.mt-large {margin-top: 10rem;}
 .center-text {text-align: center;}
+.up-txt {text-transform: uppercase;}
