@@ -13,14 +13,13 @@
 
 
         &__text {
-            flex: 0 0 50%;
+            flex: 0 0 40%;
             text-align: center;
-            padding: 5rem 10rem;
+            padding: 5rem 8rem;
             
         }
 
         &__pic {
-            flex: 40%;
             height: 100%;
         }
     }
@@ -41,7 +40,7 @@
         }
 
         &__pic {
-            flex: 0 0 30%;
+            // flex: 0 0 30%;
             height: 100%;
         }
     }

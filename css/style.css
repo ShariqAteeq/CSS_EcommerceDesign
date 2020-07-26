@@ -22,11 +22,10 @@
   align-items: center;
   justify-content: center; }
   .banner-1__text {
-    flex: 0 0 50%;
+    flex: 0 0 40%;
     text-align: center;
-    padding: 5rem 10rem; }
+    padding: 5rem 8rem; }
   .banner-1__pic {
-    flex: 40%;
     height: 100%; }
 
 .banner-2 {
@@ -41,7 +40,6 @@
     text-align: center;
     padding: 5rem 8rem; }
   .banner-2__pic {
-    flex: 0 0 30%;
     height: 100%; }
 
 *,
@@ -111,12 +109,7 @@ body {
         fill: #FF5353; }
 
 .follow {
-  background-color: grey;
-  grid-column: center-start / center-end; }
-
-.footer {
-  background-color: black;
-  grid-column: full-start / full-end; }
+  padding: 10rem 12rem; }
 
 .header {
   background-color: #fff;
@@ -178,9 +171,58 @@ body {
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 4rem; }
 
-.silon_journal {
-  background-color: crimson;
-  grid-column: center-start / center-end; }
+.sj {
+  padding: 0 12rem;
+  font-size: 1.6rem;
+  color: #000000; }
+  .sj .sj__boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .sj .sj__date:link,
+  .sj .sj__date:visited {
+    text-decoration: none;
+    color: #777;
+    font-weight: 500;
+    padding: 1.5rem 0; }
+    .sj .sj__date:link:hover,
+    .sj .sj__date:visited:hover {
+      color: #FF5353; }
+  .sj .sj__heading:link,
+  .sj .sj__heading:visited {
+    font-size: 2rem;
+    color: #000000;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600; }
+    .sj .sj__heading:link:hover,
+    .sj .sj__heading:visited:hover {
+      color: #FF5353; }
+  .sj .sj_box {
+    display: flex;
+    flex-direction: column; }
+    .sj .sj_box:not(:last-child) {
+      margin-right: 3.5rem; }
+  .sj .sj__line {
+    margin-top: 3.5rem;
+    color: #dddddd; }
+  .sj .sj__social {
+    display: flex;
+    margin-top: 1.5rem;
+    color: #777;
+    font-weight: 400; }
+    .sj .sj__social__box {
+      display: flex;
+      align-items: center; }
+      .sj .sj__social__box:hover {
+        color: #FF5353;
+        cursor: pointer; }
+      .sj .sj__social__box:not(:last-child) {
+        margin-right: 3rem; }
+    .sj .sj__social__icon {
+      margin-right: 1rem; }
+  .sj .sj__img {
+    height: 40rem; }
 
 .support {
   display: flex;
