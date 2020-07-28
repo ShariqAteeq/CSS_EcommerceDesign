@@ -20,6 +20,11 @@
         transform: translateY(-8rem);
     }
 
+    &__item:hover &__img {
+        transition: all .5s ease-out;
+        filter: brightness(40%);
+    }
+
     &__header {
         
         display: flex;
