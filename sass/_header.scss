@@ -7,9 +7,19 @@
     align-items: center;
     padding: 2.5rem 12rem;
 
+    @media only screen and (max-width : $bp-medium) {
+        padding: 2rem 8rem;
+    }
+
+    @media only screen and (max-width : $bp-medsmall) {
+        padding: 2rem 4rem;
+    }
 
     &__logo {
-    
+        @media only screen and (max-width : $bp-medium) {
+            //width: 7;
+            height: 3rem;
+        }    
     }   
     
     &__nav {
@@ -27,8 +37,13 @@
         text-transform: uppercase;
         color: black;
         font-size: 1.45rem;
+        letter-spacing: 1px;
         padding: 1.2rem;
         font-weight: 530;
+
+        @media only screen and (max-width : $bp-medium) {
+            padding: .8rem;
+        }
     }
 
     &__link:hover {

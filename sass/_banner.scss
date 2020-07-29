@@ -4,44 +4,100 @@
         background-image: url('../img/bg-1.jpg');
         background-position: center;
         background-size: cover;
-        height: 80vh;
+        height: 75vh;
+
+        @media only screen and (max-width : $bp-large) {
+            height: 60vh;
+        }
+
+        @media only screen and (max-width : $bp-medsmall) {
+            height: 80rem;
+            flex-direction: column;
+        }
 
         display:flex;
-        align-items: center;
-        justify-content: center;
         
-
-
         &__text {
-            flex: 0 0 40%;
+            flex: 0 0 50%;
             text-align: center;
-            padding: 5rem 8rem;
+            justify-self: center;
+            align-self: center;
+            padding : 0 5rem;
+
+            @media only screen and (max-width : $bp-medsmall) {
+                margin-top: 3rem;
+            }
             
+        }
+
+        &__right {
+            flex: 1;
+            
+            @media only screen and (max-width : $bp-medsmall) {
+                width: 80%;
+                height: 70%;
+                order: -1;
+                justify-self: center;
+                align-self: center;
+            }
+            
+           // margin-right: 0rem;
         }
 
         &__pic {
             height: 100%;
+            width: 100%;
+
+            // @media only screen and (max-width : $bp-medsmall) {
+            //     width: 50%;
+            //     height: 50%;
+            // }
         }
     }
     &-2 {
         background-color: #EAE2D8;
-         height: 65vh;
+         height: 50rem;
 
         display:flex;
-        align-items: center;
-        justify-content: center;
+        padding: 0 3rem;
 
-        padding: 0 4rem;
+        // @media only screen and (max-width : $bp-large) {
+        //     height: 60vh;
+        // }
 
+        @media only screen and (max-width : $bp-medsmall) {
+            height: 80rem;
+            flex-direction: column;
+        }
+        
+        
         &__text {
             flex: 0 0 50%;
             text-align: center;
+            justify-self: center;
+            align-self: center;
             padding: 5rem 8rem;
+
+            @media only screen and (max-width : $bp-medsmall) {
+                flex: 0 0 20%;
+                padding: 2rem;
+            }
+        }
+
+        &__right {
+            flex: 1;
+
+            @media only screen and (max-width : $bp-medsmall) {
+                width: 80%;
+                height:50%;
+                justify-self: center;
+                align-self: center;
+            }
         }
 
         &__pic {
-            // flex: 0 0 30%;
-            height: 100%;
+             height: 100%;
+             width: 100%;
         }
     }
 }
